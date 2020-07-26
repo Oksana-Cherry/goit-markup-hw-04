@@ -11,35 +11,45 @@
 
   <body>
     <header class="header">
-      <div class="container main-nav">     
+      <div class="container main-nav">
         <nav class="navigation">
-           <a class="logo-1" href="./index.html" lang="en"><span class="web">Web</span>Studio</a>
-        <!-- Ссылки на другие страницы или разделы текущей -->
-         <ul class="navigation-list">
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="./index.html">Студия</a>
-          </li>
-          <li class="navigation-list-item"> 
-            <a class="navigation-list-link" href="./portfolio.html" target="_blank">Портфолио</a>
-          </li>
-          <li class="navigation-list-item">
-            <a class="navigation-list-link" href="./contact">Контакты</a>
-          </li>
-         </ul>
-        </nav>    
+          <a class="logo-1" href="./index.html" lang="en"><span class="web">Web</span>Studio</a>
+          <!-- Ссылки на другие страницы или разделы текущей -->
+          <ul class="navigation-list">
+            <li class="navigation-list-item">
+              <a class="navigation-list-link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link" href="./portfolio.html" target="_blank">Портфолио</a>
+            </li>
+            <li class="navigation-list-item">
+              <a class="navigation-list-link" href="./contact">Контакты</a>
+            </li>
+          </ul>
+        </nav>
         <ul class="auth-nav">
           <li class="address-list">
             <address class="address-list-mail">
-            <a class="address-mail" href="mailto:info@devstudio.com"><span><img class="address-icon"src="./images/cmc.svg"></span>info@devstudio.com</a>
-           </address>
+              <a class="address-mail" href="mailto:info@devstudio.com" lang="en">
+                <!--<span><img class="address-icon" src="./images/cmc.svg" alt="cmc"></span>-->
+                <svg class="address-icon" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-cmc">
+                  </use>
+                </svg>info@devstudio.com</a>
+            </address>
           </li>
           <li class="address-list">
             <address class="address-list-tel">
-             <a class="address-tel" href="tel:+38096111111"><span><img class="address-icon"src="./images/tel.svg"></span>+38 096 111 11 11</a>
+              <a class="address-tel" href="tel:+38096111111">
+                <!--<span><img class="address-icon" src="./images/tel.svg" alt="tel"></span>-->
+                <svg class="address-icon" width="10" height="15">
+                  <use href="./images/sprite.svg#icon-tel">
+                  </use>
+                </svg>+38 096 111 11 11</a>
             </address>
           </li>
         </ul>
-       </div>
+      </div>
     </header>
     <main class="portfolio-main">
       <div class="container">
@@ -112,47 +122,64 @@
     <div class="container footer-nav">
       <div class="wrapper-footer">
         <div class="footer-logo">
-      <a class="logo-2" href="./index.html" lang="en"><span class="web">Web</span>Studio</a></div>
-      <ul class="footer-address">
-        <li class="address-item"><address class="address-item-kiev">г. Киев, пр-т Леси Украинки, 26</address></li>
-        <li class="address-item">
-          <address class="footer-address-list">
-            <a class="footer-address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </address>
-        </li>
-        <li class="address-item">
-          <address class="footer-address-list">
-            <a class="footer-address-tel" href="tel:+38096111111">+38 096 111 11 11</a>
-          </address>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-social">
-      <h2 class="join">присоединяйтесь</h2>
-      <ul class="social-links">
-        <li class="link"><a href="#" class="link-a" aria-label="иконка инстаграм">
-            <img src="./images/instagram.svg"alt="инстаграм"
-            /></a>
-        </li>
-        <li class="link">
-          <a href="#" class="link-a" aria-label="иконка твиттер">
-            <img src="./images/twitter1.svg" alt="твиттер"
-          /></a>
+          <a class="logo-2" href="./index.html" lang="en"><span class="web">Web</span>Studio</a>
+        </div>
+        <ul class="footer-address">
+          <li class="address-item">
+            <address class="address-item-kiev">г. Киев, пр-т Леси Украинки, 26</address>
           </li>
-        <li class="link">
-          <a href="#" class="link-a" aria-label="иконка фейсбук">
-            <img src="./images/facebook.svg" alt="фейсбук"
-          /></a>
-        </li>
-        <li class="link">
-          <a href="#" class="link-a" aria-label="иконка ликедин">
-            <img src="./images/linkedin.svg" alt="ликедин"
-          /></a>
-        </li>
-      </ul>
+          <li class="address-item">
+            <address class="footer-address-list">
+              <a class="footer-address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </address>
+          </li>
+          <li class="address-item">
+            <address class="footer-address-list">
+              <a class="footer-address-tel" href="tel:+38096111111">+38 096 111 11 11</a>
+            </address>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h2 class="join">присоединяйтесь</h2>
+        <ul class="social-links">
+          <li class="link"><a href="#" class="footer-social-link-item" aria-label="иконка инстаграм">
+              <!--<img src="./images/instagram.svg" alt=""/>-->
+              <svg class="footer-social-link-svg">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link"><a href="#" class="footer-social-link-item" aria-label="иконка твиттер">
+              <!--<img src="./images/twitter1.svg" alt=""/>-->
+              <svg class="footer-social-link-svg">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="link"><a href="#" class="footer-social-link-item" aria-label="иконка фейсбук">
+              <!--<img src="./images/facebook.svg" alt=""/>-->
+              <svg class="footer-social-link-svg">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a></li>
+          <li class="link"><a href="#" class="footer-social-link-item" aria-label="иконка ликедин">
+              <!--<img src="./images/linkedin.svg" alt=""/>-->
+              <svg class="footer-social-link-svg">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="aside">
+        <b>Подпишитесь на рассылку</b>
+        <ul>
+          <li></li>
+          <li><button class="button-icon-cmc">Подписаться</button></li>
+        </ul>
+      </div>
     </div>
-    <div class="aside"><b>Подпишитесь на рассылку</b></div>
-  </div>
   </footer>
 </body>
 </html>
