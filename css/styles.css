@@ -122,6 +122,7 @@ border-radius: 2px;*/
   display: flex;
   align-items: center;
 }
+
 .auth-nav {
   display: flex;
   margin: auto;
@@ -129,7 +130,8 @@ border-radius: 2px;*/
 .auth-nav .address-list + .address-list {
   margin-left: 27.24px;
 }
-.address-icon:hover {
+.address-mail:hover .address-icon,
+.address-tel:hover .address-icon {
   fill: var(--accent-color);
 }
 .navigation-list-link:hover,
